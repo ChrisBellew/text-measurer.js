@@ -5,9 +5,9 @@
     var start = window.performance.now();
     var referenceElement = document.createElement('span');
     referenceElement.style.font = 'normal 30px Arial';
-    referenceElement.innerText = '1234567890abcdefghihklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    
+    referenceElement.innerText = '1234567890abcdefghihklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';    
     document.body.appendChild(referenceElement);
+    
     var size = new TextMeasurer().measureText({ text: '1234567890abcdefghihklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', element: referenceElement });
     var end = window.performance.now();
     console.log('Measured as ', size.width, 'x', size.height, ' in ', end - start, 'ms');

@@ -9,7 +9,6 @@ function TextMeasurer() {
     
     var canvas = document.createElement('canvas');
     var context = canvas.getContext('2d');
-    document.body.appendChild(canvas);
     canvas.width = boundingRect.width;
     canvas.height = boundingRect.height * 1.2; // Bounding rect height may not be enough as fillText() will render from the baseline 
     context.font = font;
